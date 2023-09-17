@@ -1,18 +1,10 @@
-function App() {
+import Home from './components/home'
 
-
-
-
-
-
-
-
-
-
-
-
+const App = () => {
   return (
-    <h1 className="text-3xl">Hello world</h1>
+   <div>
+    <Home />
+   </div> 
   )
 }
 
