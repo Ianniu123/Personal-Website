@@ -6,9 +6,19 @@ body {
   background-color: #0A0A0A;
 }
 
+
+/* Navbar*/
 h1 {
   font-family: 'Bricolage Grotesque', sans-serif;
   color: #FFFFFF;
+}
+
+.border-button {
+  transition: border-width 0.1s linear;
+}
+
+.border-button:hover { 
+  border-width: 3px; 
 }
 
 #nav {
@@ -21,16 +31,28 @@ h1 {
   color: #FFFFFF;
 }
 
-/* */
+#icon-button {
+  width: 24px;
+  height: 24px;
+}
+
+/* About Section*/
+#about {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
+}
+
+/* Projects Section */
 $extra__color-0: #fff; // #ff6ec4
 $extra__color-1: #f3fefe; // #00c9ff
 $extra__color-2: #101010;
 $extra__color-3: #1a1a1a;
 $extra__color-4: #e6e6e6;
 
-
 .teaser-element-container {
-  --teaser__icon__color: #{$extra__color-4};
+  color: white;
   $border-radius: 12px;
   margin-bottom: 40px;
   width: 75%;
@@ -39,7 +61,7 @@ $extra__color-4: #e6e6e6;
   position: relative;
   border-radius: $border-radius;
   background-color: $extra__color-2;
-  transition: background 0.45s;
+  
   .icon {
     width: 36px;
     height: 36px;
@@ -65,33 +87,6 @@ $extra__color-4: #e6e6e6;
     color: $extra__color-4;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    height: calc(100% + 2px);
-    width: calc(100% + 2px);
-    border-radius: $border-radius;
-    inset: -1px;
-    position: absolute;
-    z-index: -2;
-    right: -1px;
-    top: -1px;
-    bottom: -1px;
-    left: -1px;
-    user-select: none;
-    pointer-events: none;
-
-    transition: background 0.2s;
-    will-change: background;
-    contain: size;
-    background: radial-gradient(
-      300px circle at var(--x__mouse__coordinate) var(--y__mouse__coordinate),
-      $extra__color-0 0,
-      $extra__color-1 50%,
-      transparent 100%
-    );
-  }
-
   &:hover {
     background-color: $extra__color-3;
   }
@@ -101,3 +96,9 @@ $extra__color-4: #e6e6e6;
 //  koby.dev | 2022
 //
 //  pen template styles
+
+/* Contact */
+
+#contact {
+  color: white;
+}
