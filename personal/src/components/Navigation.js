@@ -6,24 +6,24 @@ const Navigation = ({ project, about, contact, scrollToSection }) => {
     <nav className="absolute nav w-full "> {/*fixed*/}
       <div className=" mx-auto p-4 mr-6">
         <div className="hidden justify-end md:flex md:w-auto md:order-1">
-          <ul id="nav" className="flex place-items-end md:p-0 mt-4 font-medium md:flex-row md:space-x-8 md:mt-0 md:border-0 " >
+          <ul id="nav" className="flex place-items-end md:p-0 mt-4 font-medium md:flex-row md:space-x-8 md:mt-0 md:border-0" >
             <li>
-              <a href="#" onClick={() => scrollToSection(about)} className="rounded border-button">About Me</a>
+              <a href="#" onClick={() => scrollToSection(about)} className="rounded border-button md:text-xl lg:text-base">About Me</a>
             </li>
             <li>
-              <a href="#" onClick={() => scrollToSection(project)} className="rounded border-button">Projects</a>
+              <a href="#" onClick={() => scrollToSection(project)} className="rounded border-button md:text-xl lg:text-base">Projects</a>
             </li>
             <li>
-              <a href="#" onClick={() => scrollToSection(contact)} className="rounded border-button">Contact</a>
+              <a href="#" onClick={() => scrollToSection(contact)} className="rounded border-button md:text-xl lg:text-base">Contact</a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/yu-zhiyao/" target="_blank">
-                <AiOutlineLinkedin className="rounded border-button" id='icon-button' />
+                <AiOutlineLinkedin className="rounded border-button md:text-xl lg:text-base" id='icon-button' />
               </a>
             </li>
             <li>
               <a href="https://github.com/Ianniu123" target="_blank">
-                <VscGithub className="rounded border-button" id='icon-button' />
+                <VscGithub className="rounded border-button md:text-xl lg:text-base" id='icon-button' />
               </a>
             </li>
           </ul>

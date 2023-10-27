@@ -45,9 +45,9 @@ const Project = () => {
 
   return (
 		<section ref={ref}>
-			<div className="pt-32 h-full">
+			<div className="pt-32">
 				<h1 className="flex items-center justify-center text-4xl mb-2">My Projects</h1>
-        <div className="grid grid-cols-2">
+        <div className="flex-col md:grid md:grid-cols-2 md:grid-rows-2">
             {projects.map((project, index) => {
               return ( 
                 <motion.li 
@@ -55,7 +55,7 @@ const Project = () => {
                   variants={variants} 
                   initial='initial' 
                   animate={isInView ? 'animate' : 'initial'}
-                  transition={{ duration: 10, delay: index * 1 }}
+                  transition={{ duration: 8, delay: index * 1 }}
                 >
                   <ProjectBox 
                     project={project} 

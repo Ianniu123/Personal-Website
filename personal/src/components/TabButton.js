@@ -10,7 +10,7 @@ const TabButton = ({ active, selectTab, name }) => {
 
 	return (
 		<div className="mr-4">
-			<button onClick={() => selectTab(name.toLowerCase())} className={`hover:text-white ${buttonClasses}`}>
+			<button onClick={() => selectTab(name.toLowerCase())} className={`md:text-xl hover:text-white ${buttonClasses}`}>
 				<p className="mr-3">{name}</p>
 				<motion.div 
 					animate={active ? "active" : "default"} 
